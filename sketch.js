@@ -9,6 +9,7 @@ var manImg;
 var bool = true;
 
 var bgImage;
+var bgVideo;
 
 
 function preload() {
@@ -102,15 +103,15 @@ function draw() {
 
   if (mouseX > 900 && mouseY > 100) {
 
-    image(grow, width / 2, height / 2);
-    grow.play();
+    //image(grow, width / 2, height / 2);
+    //grow.play();
     
      image(bgVideo, width / 2, height / 2);
-    grow.play();
+    bgVideo.play();
 
   } else if (mouseX < 100 && mouseY > 100) {
     //background(255);
-    grow.pause();
+    bgVideo.pause();
     image(bg, 500, 200);
   }
 
